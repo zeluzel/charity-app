@@ -8,7 +8,8 @@
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<header th:replace="fragments/header :: headerUnlogged"></header>
+<header th:insert="fragments/header :: navUnlogged" class="header--main-page"></header>
+
 <div class="slogan container container--90">
     <div class="slogan--item">
         <h1>
