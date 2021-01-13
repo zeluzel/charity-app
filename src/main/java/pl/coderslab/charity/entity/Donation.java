@@ -1,11 +1,8 @@
 package pl.coderslab.charity.entity;
 
 import lombok.*;
-import org.apache.tomcat.jni.Address;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.List;
 
 @Entity
