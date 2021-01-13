@@ -1,6 +1,7 @@
 package pl.coderslab.charity.entity;
 
 import lombok.*;
+import org.apache.tomcat.jni.Address;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -30,12 +31,7 @@ public class Donation {
     @JoinColumn(name = "institution_id")
     private Institution institution;
 
-    private String street;
-    private String city;
-    private String zipCode;
-
-    private LocalDate pickUpDate;
-    private LocalTime pickUpTime;
-    private String pickUpComment;
+    @Embedded
+    private AddressType address;
 
 }
